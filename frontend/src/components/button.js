@@ -168,7 +168,7 @@ function Button(props){
             const requestOptions = {
               method: 'POST',
               headers: { 'Content-Type': 'application/json', 'User-Agent':'PostmanRuntime/7.29.0' },
-              body: JSON.stringify({ symptoms: yoursymptoms }),
+              body: JSON.stringify({ symptoms: ['vomiting','breathlessness', 'sweating', 'chest_pain'] }),
             };
             
             fetch('https://limitless-cliffs-12735.herokuapp.com/api/', requestOptions)
